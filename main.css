@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courgette', cursive;
+    background-color: #ffffff;
+    background: url('https://heavyeditorial.files.wordpress.com/2013/03/cool-simple-and-minimalist-desktop-wallpaper-the-police-box-1.png') fixed;
+    color: #f7f7f7;
+}
+
+header {
+    width: 100%;
+    padding: 30px 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+header::before,
+header::after {
+    display: table;
+    content: '';
+}
+header::after {
+    clear: both;
+}
+
+.pageOne,
+.frontPage {
+    float: left;
+    padding-left: 1.04166666%;
+    padding-right: 1.04166666%;
+}
+.pageOne {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 33.33%;
+    
+}
+.frontPage {
+    width: 66.67%;
+}
+
+.logo {
+    display: block;
+    height: 200px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header ul li {
+    padding: 10px 20px;
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline;
+}
+header ul {
+    text-align: right;
+    margin-top: 50px
+}
+
+.quizStart {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin-top: 150px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+button {
+    padding: 20px;
+    border: 12px;
+    border-color: white;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: grey;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 40px;
+}
+button:hover, button:focus {
+    background-color: darkcyan;
+    color: wheat
+}
+main div {
+    margin: 0 auto;
+}
+label:nth-child(1) {
+    background-color: rgb(61, 140, 167);
+}
+label:nth-child(2) {
+    background-color: rgb(61, 140, 167);
+}
+label:nth-child(3) {
+    background-color: rgb(61, 140, 167);
+}
+label:nth-child(4) {
+    background-color: rgb(61, 140, 167);
+}
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: block;
+    list-style: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 22px;
+    text-align: left;
+}
+
+.answerOption ul {
+  list-style: none;
+}
+
+label:hover, label:focus {
+    background-color: paleturquoise
+}
+fieldset {
+    border: none;
+}
+
+input:checked {
+    border: 8px solid #ebca52;
+}
+
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+h2 {
+    text-align: left;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-transform: uppercase
+}
+form button {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: #193199;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+form button:hover, form button:focus {
+    background-color: darkcyan;
+    color: wheat
+}
+.answer {
+    flex: 1 1 auto;
+}
+.questionAnswerForm {
+    display: none;
+    width: 50%;
+}
+.correctFeedback {
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    background:  rgb(110, 110, 182);
+    padding-top: 40px;
+    height: 200px;
+}
+
+.correctFeedback button {
+    width: 100%;
+}
+
+.correctFeedback p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.correctFeedback img {
+    width: 200px;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(24, 104, 224);
+    margin: auto;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+h3 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.results img {
+    width: 500px;
+    height: auto;
+}
+.results p:first-of-type {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.results p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.results.correctFeedback {
+  height: 600px;
+}
+
+.restartButton {
+    margin-top: 40px;
+}
+
+
+@media screen and (min-width: 1190px) {
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .questionAnswerForm,
+    .quizStart {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+    .correctFeedback {
+      height: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 200px;
+        height: 120px;
+        display: block;
+        margin: auto;
+    }
+    header ul {
+        margin: 10px;
+        text-align: center
+    }
+    h1 {
+        font-size: 1.5em
+    }
+    header ul li {
+        padding: 10px;
+        font-size: 18px
+    }
+    .pageOne,
+    .frontPage {
+        width: 100%
+    }
+    .quizStart {
+        width: 100%;
+        padding: 40px;
+        margin-top: 0
+    }
+    h2 {
+        font-size: 18px
+    }
+    .questionAnswerForm {
+        width: 100%;
+        padding: 20px;
+        margin-top: 0
+    }
+    label {
+        font-size: 16px;
+        padding: 15px
+    }
+    .correctFeedback img {
+        width: 100px;
+        height: auto
+    }
+    .correctFeedback p {
+        font-size: 16px;
+        margin: 0 15px
+    }
+  
+    h3 {
+        font-size: 25px
+    }
+    .results.correctFeedback {
+      height: 300px;
+    }
+}
